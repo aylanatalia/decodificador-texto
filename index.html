@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Decodificador A.N.</h1>
+    </header>
+    <main class="conteudo">
+        <section class="conteudo__corpo">
+            <textarea id="area-texto" name="texto" rows="10" cols="30" style="text-transform: lowercase;" placeholder="Digite seu texto aqui" class="conteudo__corpo__texto"></textarea>
+                <section class="conteudo__corpo__aviso">
+                    <p class="conteudo__corpo__informacao">Atenção: somente letras minúsculas e sem acento</p>
+                    <div class="conteudo__corpo__botao">
+                        <button onclick="criptografar()" type="button" class="conteudo__corpo__botao__criptografar" id="botao-criptografar">Criptografar</button>
+                        <button onclick="descriptografar()" type="button" class="conteudo__corpo__botao__criptografar" id="botao-descriptografar">Descriptografar</button>
+                </section>
+            </div>
+        </section>   
+        <div class="conteudo__saida" id="saida-texto" type="text">
+            <img class="conteudo__saida__imagem" id="imagem-escondida" src="./assets/pontointerrogacao1_resized.png" alt="ponto de interrogação">
+            <h2 class="conteudo__saida__subtitulo" id="subtitulo-escondido">Nenhuma mensagem Encontrada</h2>
+            <p class="conteudo__saida__texto" id="texto-escondido">Digite o texto que você deseja criptografar ou descriptogafar</p>
+        </div>
+        
+
+    </main>
+    <footer class="rodape">
+        <p class="rodape__texto">Desenvolvido por Ayla Natalia</p>
+        <div class="rodape__links">
+            <a class="rodape__links__rede" href="https://www.instagram.com/ayla_natalia08/">
+            <img src="./assets/instagram.png">
+            </a>
+            <a class="rodape__links__rede" href="https://www.linkedin.com/in/ayla-nat%C3%A1lia-martins-ferreira-1a5790283/?originalSubdomain=br">
+            <img src="./assets/linkedin.png">
+            </a>
+            <a class="rodape__links__rede" href="https://github.com/aylanatalia">
+            <img src="./assets/github.png">
+            </a>
+        </div>
+    </footer>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
